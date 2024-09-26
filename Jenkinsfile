@@ -21,6 +21,10 @@ pipeline {
                 echo 'Deploying the application...'
                 // Add your deployment steps here
             }
+             stage('Run') {
+            steps {
+                sh 'npm run'
+            }
         }
     }
 }
